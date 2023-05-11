@@ -5,7 +5,7 @@
   --title-text-color: #2e2f42;
   --accent-color: #4d5ae5;
   --accent-focus-color: #404bbf;
-  --accent-button-color: #f4f4fd;
+  --accent-white-color: #f4f4fd;
   --border-btn-portfolio-color: #e7e9fc;
   --border-accent: #e7e9fc;
   --accent-feauter-color: #f4f4fd;
@@ -42,6 +42,8 @@ body {
 
 .header {
   border-bottom: 1px solid var(--border-accent);
+  box-shadow: 0px 2px 1px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%),
+    0px 1px 6px rgb(46 47 66 / 8%);
 }
 
 .nav-header {
@@ -228,7 +230,7 @@ body {
   height: 112px;
   border-radius: 4px;
 
-  background-color: var(--accent-feauter-color);
+  background-color: var(--accent-white-color);
 }
 
 .title-features {
@@ -262,7 +264,7 @@ body {
   margin-bottom: 72px;
 
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
@@ -287,11 +289,13 @@ body {
 /* Section 3 */
 
 .section-team {
-  background-color: var(--accent-button-color);
+  background-color: var(--accent-white-color);
 }
 .list-team {
   display: flex;
   gap: 24px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-item {
@@ -302,7 +306,7 @@ body {
 }
 
 .info {
-  padding: 32px 16px;
+  padding: 32px 0px;
 }
 
 .team-name {
@@ -355,6 +359,10 @@ body {
   background-color: var(--accent-focus-color);
 }
 
+.social-svg {
+  fill: var(--accent-white-color);
+}
+
 /* Section 4 */
 .client {
   display: flex;
@@ -399,6 +407,7 @@ body {
 .container-footer {
   display: flex;
   align-items: baseline;
+  gap: 120px;
 }
 
 .footer-logo {
@@ -410,7 +419,7 @@ body {
 }
 
 .footer-studio {
-  color: var(--accent-button-color);
+  color: var(--accent-white-color);
 }
 
 .footer-text {
@@ -421,7 +430,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 
-  color: var(--accent-button-color);
+  color: var(--accent-white-color);
 }
 
 .media {
@@ -437,10 +446,6 @@ body {
 
 .social-footer-list {
   gap: 16px;
-}
-
-.container-social {
-  margin-left: 120px;
 }
 
 .social-footer:hover,
@@ -475,8 +480,10 @@ body {
 .portfolio .button:hover,
 .portfolio .button:focus {
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 2px 1px rgb(0 0 0 / 8%),
+    0px 2px 2px rgb(0 0 0 / 12%);
   background: var(--accent-focus-color);
-  color: var(--accent-button-color);
+  color: var(--accent-white-color);
 }
 
 .potfolio-list {
@@ -487,6 +494,16 @@ body {
 
 .portfolio-item {
   width: 360px;
+}
+
+.photo-link {
+  display: block;
+}
+
+.photo-link:hover,
+.photo-link:focus {
+  box-shadow: 0px 1px 6px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%),
+    0px 2px 1px rgb(46 47 66 / 8%);
 }
 
 .portfolio-info {
