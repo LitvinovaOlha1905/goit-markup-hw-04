@@ -407,6 +407,9 @@ body {
 .container-footer {
   display: flex;
   align-items: baseline;
+}
+
+.container-footer-logo {
   gap: 120px;
 }
 
